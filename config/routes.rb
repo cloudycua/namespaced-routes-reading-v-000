@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
 scope '/admin' do
   resources :stats, only: [:index]
-  resources :authors, only: [:new, :delete, :create, :moderate]
+  resources :authors
 end
 # replaces
 #  get '/admin/stats', to: 'stats#index'
